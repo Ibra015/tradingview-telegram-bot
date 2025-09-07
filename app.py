@@ -3,8 +3,8 @@ import requests
 
 app = Flask(__name__)
 
-TELEGRAM_TOKEN = "8332167813:AAF4G8PIbbX_l-zZyUju1_bbt8pYLwDknFs"
-CHAT_ID = "1103933621"
+TELEGRAM_TOKEN = ""
+CHAT_ID = ""
 
 def send_telegram(text):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -20,3 +20,4 @@ def webhook():
 
 if __name__ == "__main__":
     app.run()
+
